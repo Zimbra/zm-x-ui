@@ -1,0 +1,15 @@
+{
+	"name": "@zimbra/zm-x-ui",
+	"version": "1.0.0",
+	"description": "LESS mixins, CSS variables, and icons used by the Zimbra X client",
+	"main": "index.less",
+	"keywords": [
+		"zimbra",
+		"zm-x-web"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Zimbra/zm-x-ui"
+	},
+	"license": "BSD-3-Clause"
+}
