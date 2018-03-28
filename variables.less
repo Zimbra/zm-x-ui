@@ -27,6 +27,7 @@
 @off-white: #fafafa;
 @gold: #ffb81c;
 @gold-lighter: lighten(@gold, 10%);
+@translucent-white: rgba(255,255,255,.7);
 
 // Branding colors
 @brand-primary: #e72f27;
@@ -78,11 +79,12 @@
 @list-active-bg: fade(@brand-primary, 15%);
 @list-hover-bg: fade(@brand-primary, 8%);
 @sidebar-bg-color: @gray-lightest;                                 // Left sidebar background
-@sidebar-primary-button-color: lighten(@gray-lightest, 2%);        // The top button on the sidebar ("Compose", "New Contact")
+@sidebar-primary-button-color: @brand-primary;                     // The top button on the sidebar ("Compose", "New Contact")
 @sidebar-shaded-color: @gray-lighter;
 @rightbar-bg-color: @sidebar-bg-color;                             // Right sidebar background
 @read-pane-toolbar-color: @gray-lightest;                          // The toolbar above the read pane.
 @read-pane-bg-color: @gray-lightest;                               // The middle/main pane
+@border-color: @gray-lighter;
 
 // Favorite / Trash Indicators
 @favorite-indicator-active: @gold;
