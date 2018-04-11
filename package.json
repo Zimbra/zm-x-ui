@@ -7,6 +7,11 @@
 		"zimbra",
 		"zm-x-web"
 	],
+	"scripts": {
+		"generateCSSVariablesFile": "node generate-css-variables.js",
+		"build": "npm run generateCSSVariablesFile",
+		"prepublishOnly": "npm run build && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags"
+	},
 	"repository": "Zimbra/zm-x-ui",
 	"license": "BSD-3-Clause"
 }
