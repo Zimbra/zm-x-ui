@@ -1,12 +1,12 @@
 @font-face {
-	font-family: 'zimbra-icons';
-	src: url('./icons/zimbra-icons.eot?10j6y8');
-	src: url('./icons/zimbra-icons.eot?10j6y8#iefix') format('embedded-opentype'),
-		url('./icons/zimbra-icons.ttf?10j6y8') format('truetype'),
-		url('./icons/zimbra-icons.woff?10j6y8') format('woff'),
-		url('./icons/zimbra-icons.svg?10j6y8#zimbra-icons') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'zimbra-icons';
+  src:  url('./icons/zimbra-icons.eot?cplvdh');
+  src:  url('./icons/zimbra-icons.eot?cplvdh#iefix') format('embedded-opentype'),
+    url('./icons/zimbra-icons.ttf?cplvdh') format('truetype'),
+    url('./icons/zimbra-icons.woff?cplvdh') format('woff'),
+    url('./icons/zimbra-icons.svg?cplvdh#zimbra-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 :global {
@@ -27,254 +27,306 @@
 
 		&:before {
 			// Un-implemented icons are replaced with unicode REPLACEMENT characters
-			content: '	�';
+			content: '      �';
 		}
 	}
 
+	.zimbra-icon-caret-down:before {
+		content: "\e905";
+	}
 	.zimbra-icon-expand:before {
-		content: '\e921';
+		content: "\e921";
 	}
-	.zimbra-icon-add-event:before {
-		content: '\e900';
+	.zimbra-icon-pencil:before {
+		content: "\e915";
 	}
-	.zimbra-icon-folder-add:before {
-		content: '\e901';
+	.zimbra-icon-envelope:before {
+		content: "\e95d";
 	}
 	.zimbra-icon-add-note:before {
-		content: '\e902';
+		content: "\e902";
 	}
-	.zimbra-icon-plus:before {
-		content: '\e903';
+	.zimbra-icon-commenting:before {
+		content: "\e90d";
+	}
+	.zimbra-icon-book:before {
+		content: "\e931";
 	}
 	.zimbra-icon-archive:before {
-		content: '\e904';
+		content: "\e904";
 	}
-	.zimbra-icon-paperclip:before {
-		content: '\e905';
+	.zimbra-icon-shield:before {
+		content: "\e942";
 	}
-	.zimbra-icon-user-o:before {
-		content: '\e906';
-	}
-	.zimbra-icon-user:before {
-		content: '\e907';
-	}
-	.zimbra-icon-bold:before {
-		content: '\e908';
-	}
-	.zimbra-icon-list-ul:before {
-		content: '\e909';
+	.zimbra-icon-add-event:before {
+		content: "\e900";
 	}
 	.zimbra-icon-calendar-alt-o:before {
 		content: "\e90a";
 	}
 	.zimbra-icon-calendar-o:before {
-		content: '\e90b';
+		content: "\e90b";
 	}
-	.zimbra-icon-align-center:before {
-		content: '\e90c';
+	.zimbra-icon-calendar-range:before {
+		content: "\e959";
 	}
-	.zimbra-icon-commenting:before {
-		content: '\e90d';
+	.zimbra-icon-add-circle:before {
+		content: "\e95e";
 	}
-	.zimbra-icon-check-square:before {
-		content: '\e90e';
+	.zimbra-icon-clock:before {
+		content: "\e951";
 	}
-	.zimbra-icon-square-o:before {
-		content: '\e90f';
+	.zimbra-icon-restore:before {
+		content: "\e962";
 	}
-	.zimbra-icon-check:before {
-		content: '\e910';
+	.zimbra-icon-paperclip:before {
+		content: "\e956";
 	}
-	.zimbra-icon-close-circle:before {
-		content: '\e911';
-	}
-	.zimbra-icon-close:before {
-		content: '\e912';
-	}
-	.zimbra-icon-collapse-items:before {
-		content: '\e913';
-	}
-	.zimbra-icon-angle-double-left:before {
-		content: '\e914';
-	}
-	.zimbra-icon-pencil:before {
-		content: '\e915';
-	}
-	.zimbra-icon-address-book:before {
-		content: '\e916';
-	}
-	.zimbra-icon-arrows-alt-inverse:before {
-		content: '\e917';
-	}
-	.zimbra-icon-file-word-o:before {
-		content: '\e918';
-	}
-	.zimbra-icon-arrow-down:before {
-		content: '\e919';
-	}
-	.zimbra-icon-download:before {
-		content: '\e91a';
-	}
-	.zimbra-icon-envelope:before {
-		content: '\e91b';
-	}
-	.zimbra-icon-smile-o:before {
-		content: '\e91c';
-	}
-	.zimbra-icon-expand-items:before {
-		content: '\e91d';
-	}
-	.zimbra-icon-angle-double-right:before {
-		content: '\e91e';
-	}
-	.zimbra-icon-facebook-official:before {
-		content: '\e91f';
-	}
-	.zimbra-icon-mail-forward:before {
-		content: '\e920';
-	}
-	.zimbra-icon-GIF:before {
-		content: '\e922';
-	}
-	.zimbra-icon-grid:before {
-		content: '\e923';
-	}
-	.zimbra-icon-question-circle:before {
-		content: '\e924';
-	}
-	.zimbra-icon-home:before {
-		content: '\e925';
-	}
-	.zimbra-icon-image:before {
-		content: '\e926';
-	}
-	.zimbra-icon-arrows-alt:before {
-		content: '\e927';
-	}
-	.zimbra-icon-indent:before {
-		content: '\e928';
-	}
-	.zimbra-icon-italic:before {
-		content: '\e929';
-	}
-	.zimbra-icon-align-left:before {
-		content: '\e92a';
-	}
-	.zimbra-icon-link:before {
-		content: '\e92b';
-	}
-	.zimbra-icon-mobile-phone:before {
-		content: '\e92c';
-	}
-	.zimbra-icon-ellipsis-h:before {
-		content: '\e92d';
+	.zimbra-icon-folder-add:before {
+		content: "\e901";
 	}
 	.zimbra-icon-folder-move:before {
-		content: '\e92e';
+		content: "\e92e";
 	}
-	.zimbra-icon-chevron-left:before {
-		content: '\e92f';
+	.zimbra-icon-user-o:before {
+		content: "\e906";
 	}
-	.zimbra-icon-chevron-right:before {
-		content: '\e930';
+	.zimbra-icon-user:before {
+		content: "\e907";
 	}
-	.zimbra-icon-book:before {
-		content: '\e931';
+	.zimbra-icon-add-contact:before {
+		content: "\e95c";
 	}
-	.zimbra-icon-list-ol:before {
-		content: '\e932';
-	}
-	.zimbra-icon-external-link:before {
-		content: '\e933';
-	}
-	.zimbra-icon-dedent:before {
-		content: '\e934';
-	}
-	.zimbra-icon-outdent:before {
-		content: '\e934';
-	}
-	.zimbra-icon-file-pdf-o:before {
-		content: '\e935';
-	}
-	.zimbra-icon-multimedia-active:before {
-		content: '\e936';
-	}
-	.zimbra-icon-multimedia:before {
-		content: '\e937';
-	}
-	.zimbra-icon-file-powerpoint-o:before {
-		content: '\e938';
-	}
-	.zimbra-icon-print:before {
-		content: '\e939';
-	}
-	.zimbra-icon-radio:before {
-		content: '\e93a';
-	}
-	.zimbra-icon-radio-active:before {
-		content: '\e93b';
-	}
-	.zimbra-icon-mail-reply-all:before {
-		content: '\e93c';
-	}
-	.zimbra-icon-mail-reply:before {
-		content: '\e93d';
-	}
-	.zimbra-icon-align-right:before {
-		content: '\e93e';
-	}
-	.zimbra-icon-search:before {
-		content: '\e93f';
-	}
-	.zimbra-icon-cog:before {
-		content: '\e940';
-	}
-	.zimbra-icon-music:before {
-		content: '\e941';
-	}
-	.zimbra-icon-shield:before {
-		content: '\e942';
-	}
-	.zimbra-icon-star:before {
-		content: '\e943';
-	}
-	.zimbra-icon-stationery:before {
-		content: '\e944';
-	}
-	.zimbra-icon-minus:before {
-		content: '\e945';
-	}
-	.zimbra-icon-address-book-sync:before {
-		content: '\e946';
-	}
-	.zimbra-icon-adn:before {
-		content: '\e947';
-	}
-	.zimbra-icon-font:before {
-		content: '\e948';
-	}
-	.zimbra-icon-trash:before {
-		content: '\e949';
-	}
-	.zimbra-icon-twitter:before {
-		content: '\e94a';
-	}
-	.zimbra-icon-underline:before {
-		content: '\e94b';
-	}
-	.zimbra-icon-arrow-up:before {
-		content: '\e94c';
+	.zimbra-icon-user-circle-o:before {
+		content: "\e95b";
 	}
 	.zimbra-icon-users:before {
-		content: '\e94d';
+		content: "\e94d";
+	}
+	.zimbra-icon-check-square:before {
+		content: "\e90e";
+	}
+	.zimbra-icon-square-o:before {
+		content: "\e90f";
+	}
+	.zimbra-icon-star:before {
+		content: "\e943";
+	}
+	.zimbra-icon-minus-square:before {
+		content: "\e955";
+	}
+	.zimbra-icon-check-circle:before {
+		content: "\e952";
+	}
+	.zimbra-icon-check:before {
+		content: "\e910";
+	}
+	.zimbra-icon-close-circle:before {
+		content: "\e911";
+	}
+	.zimbra-icon-close:before {
+		content: "\e912";
+	}
+	.zimbra-icon-expand-items:before {
+		content: "\e91d";
+	}
+	.zimbra-icon-collapse-items:before {
+		content: "\e913";
+	}
+	.zimbra-icon-angle-double-left:before {
+		content: "\e914";
+	}
+	.zimbra-icon-angle-double-right:before {
+		content: "\e91e";
+	}
+	.zimbra-icon-address-book:before {
+		content: "\e916";
+	}
+	.zimbra-icon-arrows-alt-inverse:before {
+		content: "\e917";
+	}
+	.zimbra-icon-file-word-o:before {
+		content: "\e918";
+	}
+	.zimbra-icon-download:before {
+		content: "\e91a";
+	}
+	.zimbra-icon-smile-o:before {
+		content: "\e91c";
+	}
+	.zimbra-icon-facebook-official:before {
+		content: "\e91f";
+	}
+	.zimbra-icon-arrow-down:before {
+		content: "\e94c";
+	}
+	.zimbra-icon-arrow-up:before {
+		content: "\e957";
+	}
+	.zimbra-icon-grid:before {
+		content: "\e923";
+	}
+	.zimbra-icon-question-circle:before {
+		content: "\e924";
+	}
+	.zimbra-icon-image:before {
+		content: "\e926";
+	}
+	.zimbra-icon-home:before {
+		content: "\e925";
+	}
+	.zimbra-icon-arrows-alt:before {
+		content: "\e927";
+	}
+	.zimbra-icon-indent:before {
+		content: "\e928";
+	}
+	.zimbra-icon-align-left:before {
+		content: "\e92a";
+	}
+	.zimbra-icon-link:before {
+		content: "\e92b";
+	}
+	.zimbra-icon-mobile-phone:before {
+		content: "\e92c";
+	}
+	.zimbra-icon-ellipsis-h:before {
+		content: "\e92d";
+	}
+	.zimbra-icon-chevron-left:before {
+		content: "\e92f";
+	}
+	.zimbra-icon-chevron-right:before {
+		content: "\e919";
+	}
+	.zimbra-icon-angle-down:before {
+		content: "\e930";
+	}
+	.zimbra-icon-angle-right:before {
+		content: "\e91b";
+	}
+	.zimbra-icon-list-ol:before {
+		content: "\e932";
+	}
+	.zimbra-icon-external-link:before {
+		content: "\e933";
+	}
+	.zimbra-icon-outdent:before {
+		content: "\e934";
+	}
+	.zimbra-icon-file-pdf-o:before {
+		content: "\e935";
+	}
+	.zimbra-icon-multimedia:before {
+		content: "\e937";
+	}
+	.zimbra-icon-multimedia-active:before {
+		content: "\e936";
+	}
+	.zimbra-icon-file-powerpoint-o:before {
+		content: "\e938";
+	}
+	.zimbra-icon-print:before {
+		content: "\e939";
+	}
+	.zimbra-icon-radio:before {
+		content: "\e93a";
+	}
+	.zimbra-icon-radio-active:before {
+		content: "\e93b";
+	}
+	.zimbra-icon-mail-reply-all:before {
+		content: "\e93c";
+	}
+	.zimbra-icon-mail-reply:before {
+		content: "\e93d";
+	}
+	.zimbra-icon-mail-forward:before {
+		content: "\e920";
+	}
+	.zimbra-icon-search:before {
+		content: "\e93f";
+	}
+	.zimbra-icon-cog:before {
+		content: "\e940";
+	}
+	.zimbra-icon-music:before {
+		content: "\e941";
+	}
+	.zimbra-icon-minus:before {
+		content: "\e953";
+	}
+	.zimbra-icon-plus:before {
+		content: "\e903";
+	}
+	.zimbra-icon-address-book-sync:before {
+		content: "\e946";
+	}
+	.zimbra-icon-adn:before {
+		content: "\e947";
+	}
+	.zimbra-icon-text-options:before {
+		content: "\e95f";
+	}
+	.zimbra-icon-bold:before {
+		content: "\e908";
+	}
+	.zimbra-icon-list-ul:before {
+		content: "\e909";
+	}
+	.zimbra-icon-align-center:before {
+		content: "\e90c";
+	}
+	.zimbra-icon-stationery:before {
+		content: "\e944";
+		color: #000;
+	}
+	.zimbra-icon-align-right:before {
+		content: "\e93e";
+	}
+	.zimbra-icon-font:before {
+		content: "\e948";
+	}
+	.zimbra-icon-italic:before {
+		content: "\e929";
+	}
+	.zimbra-icon-GIF:before {
+		content: "\e922";
+	}
+	.zimbra-icon-trash:before {
+		content: "\e949";
+	}
+	.zimbra-icon-trash-forever:before {
+		content: "\e95a";
+	}
+	.zimbra-icon-twitter:before {
+		content: "\e94a";
+	}
+	.zimbra-icon-underline:before {
+		content: "\e94b";
 	}
 	.zimbra-icon-play-circle-o:before {
-		content: '\e94e';
+		content: "\e94e";
 	}
 	.zimbra-icon-file-excel-o:before {
-		content: '\e94f';
+		content: "\e94f";
 	}
 	.zimbra-icon-file-archive-o:before {
-		content: '\e950';
+		content: "\e950";
+	}
+	.zimbra-icon-camera:before {
+		content: "\e954";
+	}
+	.zimbra-icon-assign-list:before {
+		content: "\e960";
+	}
+	.zimbra-icon-remove-list:before {
+		content: "\e963";
+	}
+	.zimbra-icon-bars:before {
+		content: "\e961";
+	}
+	.zimbra-icon-arrow-left:before {
+		content: "\e945";
 	}
 }
