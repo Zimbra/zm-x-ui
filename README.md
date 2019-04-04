@@ -1,3 +1,6 @@
+[![NPM Downloads](https://img.shields.io/npm/dm/@zimbra/x-ui.svg?style=flat)](https://www.npmjs.com/package/@zimbra/x-ui)
+[![NPM Version](https://img.shields.io/npm/v/@zimbra/x-ui.svg?style=flat)](https://www.npmjs.com/package/@zimbra/x-ui)
+
 ## @zimbra/x-ui
 This repository contains the LESS variables and mixins used by [`zm-x-web`](https://github.com/Zimbra/zm-x-web) and Zimbra X Zimlets.
 
