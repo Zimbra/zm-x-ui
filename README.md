@@ -63,14 +63,15 @@ Review the resulting glyphs and metadata.
 7. When you're happy with what you see, click the **Download** action that's now on the **Font** tab, to download `zimbra-icons.zip`.
 
 Update the repo with the contents of the zip file by running [import-icomoon.sh](https://gist.github.com/pl12133/aadc10ad45be4952336b62b39c9e8c3a). 
-1. Set environment variable `ZM_X_UI_DIR` to point to your zm-x-ui directory; the default is `$HOME/github/Zimbra/zm-x-ui`
+
+1. Set environment variable `ZM_X_UI_DIR` to point to your `zm-x-ui` directory; the default is `$HOME/github/Zimbra/zm-x-ui`
 
    ```sh
    $: export ZM_X_UI_DIR="$HOME/path/to/zm-x-ui"
    ```
 
-2. Run script with path to icomoon.zip file as argument:
+2. Run script with path to `zimbra-icon.zip` file as argument:
  
    ```sh
-   $: ./import-icomoon.sh ./path/to/icomoon.zipExample:
+   $: ./import-icomoon.sh ./path/to/zimbra-icon.zip
    ```
