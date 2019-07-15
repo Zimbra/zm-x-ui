@@ -75,3 +75,19 @@ Update the repo with the contents of the zip file by running [import-icomoon.sh]
    ```sh
    $: ./import-icomoon.sh ./path/to/zimbra-icon.zip
    ```
+
+3. Regenerate icon variables:
+   ```sh
+   $: npm run build
+
+     or
+
+   $: node generate-icon-variables
+   ```
+
+To use the new icons for local testing, copy the repo over top of the `x-ui` module in your `zm-x-web` repo, e.g.:
+
+   ```sh
+   $: /bin/cp -rf ~/repos/zm-x-ui/* ~/repos/zm-x-web/node_modules/@zimbra/x-ui
+   ```
+...then rebuild zm-x-web.
