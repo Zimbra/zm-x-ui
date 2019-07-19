@@ -84,14 +84,3 @@ Update the repo with the contents of the zip file by running [import-icomoon.sh]
 
    $: node generate-icon-variables
    ```
-
-To use the new icons for local testing, link the zm-x-ui repo to your client after building it. e.g.:
-
-   ```sh
-   cd zm-x-ui
-   npm run build
-   cd ../zm-x-web
-   npm link ../zm-x-ui
-   npm start
-   ```
-After every change to zm-x-ui you can rebuild by running `npm run build`.
