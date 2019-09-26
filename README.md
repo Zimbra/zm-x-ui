@@ -75,3 +75,12 @@ Update the repo with the contents of the zip file by running [import-icomoon.sh]
    ```sh
    $: ./import-icomoon.sh ./path/to/zimbra-icon.zip
    ```
+
+3. Regenerate icon variables:
+   ```sh
+   $: npm run build
+
+     or
+
+   $: node generate-icon-variables
+   ```
