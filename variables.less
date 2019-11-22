@@ -1,189 +1,282 @@
 
 /** Layout */
-
-@toolbar-height: 49px;
-@checkbox-size: 42px;
-@mobile-toolbar-height: 57px;
-@external-header-height: 24px;
-@search-header-height: 72px;
-@sidebar-width: 192px;
-@rightbar-width: @sidebar-width;
+@toolbar-height: var(--toolbar-height);
+@mobile-toolbar-height: var(--mobile-toolbar-height);
+@external-header-height: var(--external-header-height);
+@search-header-height: var(--search-header-height);
+@sidebar-width: var(--sidebar-width);
+@rightbar-width: var(--sidebar-width);
 
 /** Colors */
-@login-background-color: @brand-primary;
-@login-inner-background-color: #fff;
+@login-background-color: var(--login-background-color);
+@login-inner-background-color: var(--login-inner-background-color);
 
 // Grays
-@gray-base: #000;
-@gray-darkest: lighten(@gray-base, 15%); // #262626
-@gray-darker: lighten(@gray-base, 30%); // #4d4d4d
-@gray-dark: lighten(@gray-base, 40%); // #666
-@gray: lighten(@gray-base, 46.7%); // #777
-@gray-light: lighten(@gray-base, 60%); // #999
-@gray-lighter: lighten(@gray-base, 85%); // #d9d9d9;
-@gray-lightest: lighten(@gray-base, 95%); // #f2f2f2;
-@gray-placeholder: lighten(@gray-base, 60%); // #a6a6a6;    (could be replaced by new @gray-light)
+@gray-base: var(--gray-base);
+@gray-darkest: var(--gray-darkest); // #262626
+@gray-darker: var(--gray-darker); // #4d4d4d
+@gray-dark: var(--gray-dark); // #666
+@gray: var(--gray); // #777
+@gray-light: var(--gray-light); // #999
+@gray-lighter: var(--gray-lighter); // #d9d9d9;
+@gray-lightest: var(--gray-lightest); // #f2f2f2;
+@gray-placeholder: var(--gray-placeholder); // #a6a6a6;    (could be replaced by new @gray-light)
 
 // Named colors (AVOID THESE)
-@warm-gray: @gray-light;
-@off-white: #fafafa;
-@gold: #ffb81c;
-@gold-lighter: lighten(@gold, 10%);
-@translucent-white: rgba(255,255,255,.7);
+@warm-gray: var(--gray-light);
+@off-white: var(--off-white);
+@translucent-white: var(--translucent-white);
 
 // Branding colors
-@brand-primary: #0088c1;
-@brand-secondary: #f15b24;
-@brand-tertiary: #0568ae;
-@brand-quarternary: #74d6ff;
-@brand-success: #007a3e;
-@brand-info: #5bc0de;
-@brand-warning: #ffb81c;
-@brand-danger: #cf2a2a;
+@brand-primary-50: var(--brand-primary-50);
+@brand-primary-100: var(--brand-primary-100);
+@brand-primary-200: var(--brand-primary-200);
+@brand-primary-300: var(--brand-primary-300);
+@brand-primary-400: var(--brand-primary-400);
+@brand-primary-500: var(--brand-primary-500);
+@brand-primary-600: var(--brand-primary-600);
+@brand-primary-700: var(--brand-primary-700);
+@brand-primary-800: var(--brand-primary-800);
+@brand-primary-900: var(--brand-primary-900);
+
+@brand-secondary-50: var(--brand-secondary-50);
+@brand-secondary-100: var(--brand-secondary-100);
+@brand-secondary-200: var(--brand-secondary-200);
+@brand-secondary-300: var(--brand-secondary-300);
+@brand-secondary-400: var(--brand-secondary-400);
+@brand-secondary-500: var(--brand-secondary-500);
+@brand-secondary-600: var(--brand-secondary-600);
+@brand-secondary-700: var(--brand-secondary-700);
+@brand-secondary-800: var(--brand-secondary-800);
+@brand-secondary-900: var(--brand-secondary-900);
+
+@brand-tertiary-50: var(--brand-tertiary-50);
+@brand-tertiary-100: var(--brand-tertiary-100);
+@brand-tertiary-200: var(--brand-tertiary-200);
+@brand-tertiary-300: var(--brand-tertiary-300);
+@brand-tertiary-400: var(--brand-tertiary-400);
+@brand-tertiary-500: var(--brand-tertiary-500);
+@brand-tertiary-600: var(--brand-tertiary-600);
+@brand-tertiary-700: var(--brand-tertiary-700);
+@brand-tertiary-800: var(--brand-tertiary-800);
+@brand-tertiary-900: var(--brand-tertiary-900);
+
+@brand-quarternary-50: var(--brand-quarternary-50);
+@brand-quarternary-100: var(--brand-quarternary-100);
+@brand-quarternary-200: var(--brand-quarternary-200);
+@brand-quarternary-300: var(--brand-quarternary-300);
+@brand-quarternary-400: var(--brand-quarternary-400);
+@brand-quarternary-500: var(--brand-quarternary-500);
+@brand-quarternary-600: var(--brand-quarternary-600);
+@brand-quarternary-700: var(--brand-quarternary-700);
+@brand-quarternary-800: var(--brand-quarternary-800);
+@brand-quarternary-900: var(--brand-quarternary-900);
+
+@brand-success-50: var(--brand-success-50);
+@brand-success-100: var(--brand-success-100);
+@brand-success-200: var(--brand-success-200);
+@brand-success-300: var(--brand-success-300);
+@brand-success-400: var(--brand-success-400);
+@brand-success-500: var(--brand-success-500);
+@brand-success-600: var(--brand-success-600);
+@brand-success-700: var(--brand-success-700);
+@brand-success-800: var(--brand-success-800);
+@brand-success-900: var(--brand-success-900);
+
+@brand-info-50: var(--brand-info-50);
+@brand-info-100: var(--brand-info-100);
+@brand-info-200: var(--brand-info-200);
+@brand-info-300: var(--brand-info-300);
+@brand-info-400: var(--brand-info-400);
+@brand-info-500: var(--brand-info-500);
+@brand-info-600: var(--brand-info-600);
+@brand-info-700: var(--brand-info-700);
+@brand-info-800: var(--brand-info-800);
+@brand-info-900: var(--brand-info-900);
+
+@brand-warning-50: var(--brand-warning-50);
+@brand-warning-100: var(--brand-warning-100);
+@brand-warning-200: var(--brand-warning-200);
+@brand-warning-300: var(--brand-warning-300);
+@brand-warning-400: var(--brand-warning-400);
+@brand-warning-500: var(--brand-warning-500);
+@brand-warning-600: var(--brand-warning-600);
+@brand-warning-700: var(--brand-warning-700);
+@brand-warning-800: var(--brand-warning-800);
+@brand-warning-900: var(--brand-warning-900);
+
+@brand-danger-50: var(--brand-danger-50);
+@brand-danger-100: var(--brand-danger-100);
+@brand-danger-200: var(--brand-danger-200);
+@brand-danger-300: var(--brand-danger-300);
+@brand-danger-400: var(--brand-danger-400);
+@brand-danger-500: var(--brand-danger-500);
+@brand-danger-600: var(--brand-danger-600);
+@brand-danger-700: var(--brand-danger-700);
+@brand-danger-800: var(--brand-danger-800);
+@brand-danger-900: var(--brand-danger-900);
+
+@brand-primary: var(--brand-primary-500);
+@brand-secondary: var(--brand-secondary-500);
+@brand-tertiary: var(--brand-tertiary-500);
+@brand-quarternary: var(--brand-quarternary-500);
+@brand-success: var(--brand-success-500);
+@brand-info: var(--brand-info-500);
+@brand-warning: var(--brand-warning-500);
+@brand-danger: var(--brand-danger-500);
 
 // Branding Fonts
-@branding-font-family: "Roboto", Helvetica, Arial, sans-serif;
-@branding-font-family-regular: @branding-font-family;
-@branding-font-family-medium: @branding-font-family;
-@branding-font-family-bold: @branding-font-family;
-@branding-font-family-medium-italic: @branding-font-family;
+@branding-font-family: var(--branding-font-family);
+@branding-font-family-regular: var(--branding-font-family);
+@branding-font-family-medium: var(--branding-font-family);
+@branding-font-family-bold: var(--branding-font-family);
+@branding-font-family-medium-italic: var(--branding-font-family);
 
 // Other Colors?
-@color-light-positive: #00bd02;
-@color-light-negative: #ff1f1f;
+@color-light-positive: var(--color-light-positive);
+@color-light-negative: var(--color-light-negative);
 
 // Body foreground/background colors
-@body-bg: #fff;
-@text-color: @gray-darker;
-@dialog-title-fg: black;
-@background-gray: @gray-lightest;
+@body-bg: var(--body-bg);
+@text-color: var(--text-color);
+@text-color-light: var(--text-color-light);
+@dialog-title-fg: var(--dialog-title-fg);
+@background-gray: var(--background-gray);
 
 // Link foreground colors
-@link-color: @brand-tertiary;
-@link-hover-color: darken(@link-color, 15%);
-@link-hover-decoration: underline;
+@link-color: var(--brand-tertiary-500);
+@link-hover-color: var(--brand-tertiary-500);
+@link-hover-decoration: var(--link-hover-decoration);
 
 //Item background colors
-@item-hover-bg: lighten(@brand-primary, 90%);
-@item-selected-bg: fade(lighten(@brand-primary, 50%), 50%);
+@item-hover-bg: var(--item-hover-bg);
+@item-selected-bg: var(--item-selected-bg);
 
 // Borders
-@border-color-primary: @gray-lighter;
+@border-color-primary: var(--border-color-primary);
 
 // <hr> line color
-@hr-border: @gray-lightest;
+@hr-border: var(--hr-border);
 
 // Forms
-@placeholder-color: @gray-light;
+@placeholder-color: var(--placeholder-color);
 
 // Elements
-@app-menu-active-color: @gray-lightest;
-@list-active-bg: fade(@brand-primary, 15%);
-@list-hover-bg: fade(@brand-primary, 8%);
-@sidebar-bg-color: @gray-lightest;                                 // Left sidebar background
-@sidebar-header-bg-color: @gray-lightest;                          // Left sidebar header background
-@sidebar-primary-button-color: @brand-primary;                     // The top button on the sidebar ("Compose", "New Contact")
-@sidebar-shaded-color: @gray-lighter;
-@rightbar-bg-color: @sidebar-bg-color;                             // Right sidebar background
-@read-pane-toolbar-color: @gray-lightest;                          // The toolbar above the read pane.
-@read-pane-bg-color: @gray-lightest;                               // The middle/main pane
-@border-color: @gray-lighter;
+@app-menu-active-color: var(--app-menu-active-color);
+@list-active-bg: var(--list-active-bg);
+@list-hover-bg: var(--list-hover-bg);
+@sidebar-bg-color: var(--sidebar-bg-color);                                 // Left sidebar background
+@sidebar-header-bg-color: var(--sidebar-header-bg-color);                          // Left sidebar header background
+@sidebar-primary-button-color: var(--sidebar-primary-button-color);                     // The top button on the sidebar ("Compose", "New Contact")
+@sidebar-shaded-color: var(--sidebar-shaded-color);
+@rightbar-bg-color: var(--rightbar-bg-color);                             // Right sidebar background
+@read-pane-toolbar-color: var(--read-pane-toolbar-color);                          // The toolbar above the read pane.
+@read-pane-bg-color: var(--read-pane-bg-color);                               // The middle/main pane
+@border-color: var(--border-color);
 
 // Favorite / Trash Indicators
-@favorite-indicator-active: @gold;
-@favorite-indicator-inactive: @gray;
-@favorite-indicator-hover: @gold-lighter;
-@favorite-indicator-disabled: @gray-lighter;
-@trash-indicator: @gray;
-@trash-indicator-hover: @brand-tertiary;
+@favorite-indicator-active: var(--favorite-indicator-active);
+@favorite-indicator-inactive: var(--favorite-indicator-inactive);
+@favorite-indicator-hover: var(--favorite-indicator-hover);
+@favorite-indicator-disabled: var(--favorite-indicator-disabled);
+@trash-indicator: var(--trash-indicator);
+@trash-indicator-hover: var(--trash-indicator-hover);
 
 // File Types
-@file-type-doc: #0f73ff;
-@file-type-ppt: #ff9937;
-@file-type-pdf: #ff4c4e;
-@file-type-xls: #0e9d58;
-@file-type-zip: #ada293;
-@file-type-default: #949cae;
-@file-type-media: #BC0E67;
-@file-type-code: #00B4CA;
+@file-type-doc: var(--file-type-doc);
+@file-type-ppt: var(--file-type-ppt);
+@file-type-pdf: var(--file-type-pdf);
+@file-type-xls: var(--file-type-xls);
+@file-type-zip: var(--file-type-zip);
+@file-type-default: var(--file-type-default);
+@file-type-media: var(--file-type-media);
+@file-type-code: var(--file-type-code);
 
 // Toast Notifications
-@toast-success-color: #00d171;
-@toast-failure-color: @brand-danger;
-@toast-warning-color: @brand-warning;
+@toast-success-color: var(--toast-success-color);
+@toast-failure-color: var(--toast-failure-color);
+@toast-warning-color: var(--toast-warning-color);
 
 
 /** Typography */
 
 // Body text
-@font-family-sans-serif: "Roboto", Helvetica, Arial, sans-serif;
-@font-family-serif: Georgia, "Times New Roman", Times, serif;
-@font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-sans-serif: var(--font-family-sans-serif);
+@font-family-serif: var(--font-family-serif);
+@font-family-monospace: var(--font-family-monospace);
 
-@font-family-base: @font-family-sans-serif;
-@font-brand-primary: inherit;
-@font-family-primary: inherit;
-@font-family-secondary: inherit;
+@font-family-base: var(--font-family-sans-serif);
+@font-brand-primary: var(--font-brand-primary);
+@font-family-primary: var(--font-family-primary);
+@font-family-secondary: var(--font-family-secondary);
 
-@font-size-base: 14px;
-@font-size-med: 16px;
-@font-size-large: ceil((@font-size-base * 1.25)); // ~18px
-@font-size-small: ceil((@font-size-base * 0.85)); // ~12px
+@font-size-base: var(--font-size-base);
+@font-size-med: calc(var(--font-size-base) * 1.15); // ~16px
+@font-size-large: calc(var(--font-size-base) * 1.25); // ~18px
+@font-size-small: calc(var(--font-size-base) * 0.85); // ~12px
 
-@font-size-h1: floor((@font-size-base * 2.6)); // ~36px
-@font-size-h2: floor((@font-size-base * 2.15)); // ~30px
-@font-size-h3: ceil((@font-size-base * 1.7)); // ~24px
-@font-size-h4: ceil((@font-size-base * 1.25)); // ~18px
-@font-size-h5: @font-size-base;
-@font-size-h6: ceil((@font-size-base * 0.85)); // ~12px
+@font-size-h1: calc(var(--font-size-base) * 2.6); // ~36px
+@font-size-h2: calc(var(--font-size-base) * 2.15); // ~30px
+@font-size-h3: calc(var(--font-size-base) * 1.7); // ~24px
+@font-size-h4: calc(var(--font-size-base) * 1.25); // ~18px
+@font-size-h5: var(--font-size-base);
+@font-size-h6: calc(var(--font-size-base) * 0.85); // ~12px
+
 
 // Unitless line height for components like buttons:
-@line-height-base: 1.428571429; // 20/14
+@line-height-base: var(--line-height-base); // 20/14
 // Computed line height (font-size x line-height) for layout use:
-@line-height-computed: floor(@font-size-base * @line-height-base); // ~20px
+@line-height-computed: calc(var(--font-size-base) * var(--line-height-base)); // ~20px
 
 // Headings
-@headings-font-family: inherit;
-@headings-font-weight: 300;
-@headings-line-height: 1.1;
-@headings-color: inherit;
-@headings-small-color: @gray-light;
+@headings-font-family: var(--headings-font-family);
+@headings-font-weight: var(--headings-font-weight);
+@headings-line-height: var(--headings-line-height);
+@headings-color: var(--headings-color);
+@headings-small-color: var(--headings-small-color);
 
 // Icons
-@icon-size-xs: 12px;    // Extra small
-@icon-size-sm: 16px;    // Small
-@icon-size-md: 24px;    // Medium (recommended default)
-@icon-size-lg: 32px;    // Large
+@icon-size-xs: var(--icon-size-xs);    // Extra small
+@icon-size-sm: var(--icon-size-sm);    // Small
+@icon-size-md: var(--icon-size-md);    // Medium (recommended default)
+@icon-size-lg: var(--icon-size-lg);    // Large
 
 // Client Logos
-@logo-height: 32px;
-@logo-max-width: 200px;
+@logo-height: var(--logo-height);
+@logo-max-width: var(--logo-max-width);
 
 // Spacing
-@spacing-xs: 4px;
-@spacing-sm: 8px;
-@spacing-md: 16px;
-@spacing-lg: 24px;
-@spacing-xl: 32px;
-
+@spacing-xs:4px;
+@spacing-sm:8px;
+@spacing-md:16px;
+@spacing-lg:24px;
+@spacing-xl:32px;
 /** Breakpoints */
 
 // Extra small screen / phone
-@screen-xs: 480px;
-@screen-phone: @screen-xs;
+@screen-xs:480px;
+@screen-phone:480px;
 // Small screen / tablet portrait
-@screen-sm: 769px;
-@screen-tablet: @screen-sm;
+@screen-sm:769px;
+@screen-tablet:769px;
 // Medium screen / tablet landscape
-@screen-md: 1025px;
-@screen-desktop: @screen-md;
+@screen-md:1025px;
+@screen-desktop:1025px;
 // Large screen / wide desktop
-@screen-lg: 1300px;
-@screen-lg-desktop: @screen-lg;
+@screen-lg:1300px;
+@screen-lg-desktop:1300px;
 // So media queries don't overlap when required, provide a maximum
-@screen-xs-max: (@screen-sm - 1);
-@screen-sm-max: (@screen-md - 1);
-@screen-md-max: (@screen-lg - 1);
+@screen-xs-max:768px;
+@screen-sm-max:1024px;
+@screen-md-max:1299px;
+
+
+@header-bg: var(--header-bg);
+@header-fg: var(--header-fg);
+@header-actions-fg: var(--header-actions-fg);
+
+@external-header-bg: var(--external-header-bg);
+@external-header-fg: var(--external-header-fg);
 
 
 @import (reference, optional) '~DEFAULTCLIENT/variables.less';
