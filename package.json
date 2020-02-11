@@ -8,7 +8,6 @@
 		"zm-x-web"
 	],
 	"scripts": {
-		"generateCSSVariablesFile": "node generate-css-variables.js",
 		"generateIconVariablesFile": "node generate-icon-variables.js",
 		"build": "npm run generateIconVariablesFile",
 		"prepublishOnly": "npm run build && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags"
