@@ -8,11 +8,14 @@
 		"zm-x-web"
 	],
 	"scripts": {
-		"generateCSSVariablesFile": "node generate-css-variables.js",
+		"generateDefaultPaletteFile": "node generate-default-palette.js",
 		"generateIconVariablesFile": "node generate-icon-variables.js",
-		"build": "npm run generateIconVariablesFile",
+		"build": "npm run generateIconVariablesFile && npm run generateDefaultPaletteFile",
 		"prepublishOnly": "npm run build && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags"
 	},
 	"repository": "Zimbra/zm-x-ui",
-	"license": "BSD-3-Clause"
+	"license": "BSD-3-Clause",
+	"dependencies": {
+		"@zimbraos/zm-x-palette-generator": "^1.1.0"
+	}
 }
