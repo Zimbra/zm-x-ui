@@ -96,4 +96,5 @@
 	--header-actions-fg: var(--gray-darker);
 	--external-header-bg: var(--brand-primary-700);
 	--external-header-fg: #ffffff;
+	--search-highlighter: #fff100;
 }
