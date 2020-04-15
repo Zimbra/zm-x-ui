@@ -42,6 +42,7 @@
 	--app-menu-active-color: var(--gray-lightest);
 	--list-active-bg: var(--brand-primary-50);
 	--list-hover-bg: var(--brand-primary-50);
+	--folder-item-hover-bg: var(--list-hover-bg);
 	--sidebar-bg-color: var(--gray-lightest);
 	--sidebar-header-bg-color: var(--gray-lightest);
 	--sidebar-shaded-color: var(--gray-lighter);
