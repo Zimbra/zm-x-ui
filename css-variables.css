@@ -37,7 +37,7 @@
 	--item-hover-bg: #ffffff;
 	--item-selected-bg: var(--brand-primary-100);
 	--border-color-primary: var(--gray-lighter);
-	--hr-border: var(--gray-lightest);
+	--hr-border: var(--gray-lighter);
 	--placeholder-color: var(--gray-light);
 	--app-menu-active-color: var(--gray-lightest);
 	--list-active-bg: var(--brand-primary-50);
