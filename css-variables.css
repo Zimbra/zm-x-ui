@@ -109,4 +109,6 @@
 	--external-header-bg: var(--brand-primary-700);
 	--external-header-fg: #ffffff;
 	--search-highlighter: #fff100;
+	--row-height-narrow: 72px;
+	--row-height-wide: 27px;
 }
