@@ -41,7 +41,7 @@
 .modal-screen-top() {
 	.fill();
 	position: fixed;
-	background: @gray-light;
+	background: var(--gray-light);
 	transform: translate3d(0, -150%, 0) !important;
 	transition: transform 450ms ease 20ms !important;
 	will-change: transform !important;
@@ -78,15 +78,15 @@
 
 .modalHeader() {
 	padding: 0;
-	background: @off-white;
-	border-bottom: 1px solid @gray-lighter;
-	color: @text-color;
+	background: var(--off-white);
+	border-bottom: 1px solid var(--gray-lighter);
+	color: var(--text-color);
 	text-align: center;
 
 	h2 {
 		margin: 0 90px 0 40px;
 		padding: 10px 0;
-		color: @dialog-title-fg;
+		color: var(--dialog-title-fg);
 		font-weight: normal;
 		font-size: 120%;
 		white-space: nowrap;
@@ -117,7 +117,7 @@
 		top: 5px;
 		padding: 7px;
 		margin: 0;
-		background: @gray-light;
+		background: var(--gray-light);
 		border-radius: 50%;
 		vertical-align: middle;
 		font-size: 100%;
@@ -135,24 +135,22 @@
 	border: none;
 	box-shadow: -1px 0 1px -1px black;
 	text-transform: uppercase;
-	color: @gray-darkest;
+	color: var(--gray-darkest);
 }
 
 .listItem() {
 	display: block;
 	height: 32px;
 	padding: 7px 32px;
-	// background: #FFF;
-	color: @text-color;
+	color: var(--text-color);
 	border: none;
-	// border-bottom: 1px solid @gray-lighter;
 	text-decoration: none;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 
 	&:hover {
-		color: @gray-darker;
+		color: var(--gray-darker);
 		text-decoration: none;
 	}
 
@@ -174,23 +172,23 @@
 }
 
 .toolbarHeight() {
-	height: @toolbar-height;
-	@media(max-width: @screen-sm-max)	 {
-		height: @mobile-toolbar-height;
+	height: var(--toolbar-height);
+	@media(max-width: @screen-sm-max) {
+		height: var(--mobile-toolbar-height);
 	}
 }
 
 .toolbarTop() {
-	top: @toolbar-height;
-	@media(max-width: @screen-sm-max)	 {
-		top: @mobile-toolbar-height;
+	top: var(--toolbar-height);
+	@media(max-width: @screen-sm-max) {
+		top: var(--mobile-toolbar-height);
 	}
 }
 
 .toolbarLineHeight() {
-	line-height: @toolbar-height;
-	@media(max-width: @screen-sm-max)	 {
-		line-height: @mobile-toolbar-height;
+	line-height: var(--toolbar-height);
+	@media(max-width: @screen-sm-max) {
+		line-height: var(--mobile-toolbar-height);
 	}
 }
 
