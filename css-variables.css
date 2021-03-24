@@ -73,6 +73,7 @@
 	--font-brand-primary: inherit;
 	--font-family-primary: inherit;
 	--font-family-secondary: inherit;
+	--font-family-plainText: monospace;
 	--font-size-base: 14px;
 	--font-size-med: calc(var(--font-size-base) * 1.15); /*~16px*/
 	--font-size-large: calc(var(--font-size-base) * 1.25); /*~18px*/
