@@ -31,8 +31,8 @@
 	--text-color-light: #ffffff;
 	--dialog-title-fg: #000000;
 	--background-gray: var(--gray-lightest);
-	--link-color: var(--brand-primary-700);
-	--link-hover-color: var(--brand-primary-900);
+	--link-color: var(--brand-primary-600);
+	--link-hover-color: var(--brand-primary-800);
 	--link-hover-decoration: underline;
 	--item-hover-bg: #ffffff;
 	--item-selected-bg: var(--brand-primary-100);
@@ -64,7 +64,7 @@
 	--file-type-default: #949cae;
 	--file-type-media: #bc0e67;
 	--file-type-code: #00b4ca;
-	--toast-success-color: var(--brand-success-400);
+	--toast-success-color: var(--brand-success-500);
 	--toast-failure-color: var(--brand-danger-500);
 	--toast-warning-color: var(--brand-warning-500);
 	--font-family-sans-serif: "Roboto", Helvetica, Arial, sans-serif;
