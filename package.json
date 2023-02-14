@@ -1,6 +1,6 @@
 {
 	"name": "@zimbra/x-ui",
-	"version": "5.5.0",
+	"version": "6.0.0",
 	"description": "LESS mixins, CSS variables, and icons used by the Zimbra X client and Zimbra X compatible zimlets",
 	"main": "index.less",
 	"keywords": [
@@ -11,6 +11,9 @@
 		"generateIconVariablesFile": "node generate-icon-variables.js",
 		"build": "npm run generateIconVariablesFile",
 		"prepublishOnly": "npm run build && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags"
+	},
+	"engines": {
+		"node": ">=14.5.0"
 	},
 	"repository": "Zimbra/zm-x-ui",
 	"license": "BSD-3-Clause"
