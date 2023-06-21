@@ -98,6 +98,8 @@
 	--spacing-md: calc(var(--spacing-base) * 2);
 	--spacing-lg: calc(var(--spacing-base) * 3);
 	--spacing-xl: calc(var(--spacing-base) * 4);
+	--spacing-sidebar-folder: 12px;
+	--spacing-sidebar-subfolder: 34px;
 	--icon-size-xs: 12px;
 	--icon-size-sm: 16px;
 	--icon-size-md: 24px;
