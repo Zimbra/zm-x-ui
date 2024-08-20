@@ -153,4 +153,7 @@
 	--zimbra-icon-zimbra-window-minimize: "\e996";
 	--zimbra-icon-zimbra-window-restore: "\e997";
 	--zimbra-icon-zimbra-make-current: "\e998";
+	--zimbra-icon-night: "\e999";
+	--zimbra-icon-day: "\e99a";
+	--zimbra-icon-contrast: "\e99b";
 }

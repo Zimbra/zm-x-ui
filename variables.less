@@ -28,7 +28,9 @@
 // Named colors (AVOID THESE)
 @warm-gray: var(--gray-light);
 @off-white: var(--off-white);
+@translucent-black: var(--translucent-black);
 @translucent-white: var(--translucent-white);
+@overlay-bg: var(--overlay-bg);
 
 // Branding colors
 @brand-primary-50: var(--brand-primary-50);
@@ -142,7 +144,8 @@
 // Body foreground/background colors
 @body-bg: var(--body-bg);
 @text-color: var(--text-color);
-@text-color-light: var(--text-color-light);
+@text-color-white: var(--text-color-white);
+@text-color-black: var(--text-color-black);
 @dialog-title-fg: var(--dialog-title-fg);
 @background-gray: var(--background-gray);
 
@@ -157,6 +160,8 @@
 
 // Borders
 @border-color-primary: var(--border-color-primary);
+@input-border-color: var(--input-border-color);
+@popover-row-border-color: var(--popover-row-border-color);
 
 // <hr> line color
 @hr-border: var(--hr-border);
@@ -213,22 +218,22 @@
 @font-family-plainText: var(--font-family-plainText);
 
 @font-size-base: var(--font-size-base);
-@font-size-med: calc(var(--font-size-base) * 1.15); // ~16px
-@font-size-large: calc(var(--font-size-base) * 1.25); // ~18px
-@font-size-small: calc(var(--font-size-base) * 0.85); // ~12px
+@font-size-med: var(--font-size-med); // ~16px
+@font-size-large: var(--font-size-large); // ~18px
+@font-size-small: var(--font-size-small); // ~12px
 
-@font-size-h1: calc(var(--font-size-base) * 2.6); // ~36px
-@font-size-h2: calc(var(--font-size-base) * 2.15); // ~30px
-@font-size-h3: calc(var(--font-size-base) * 1.7); // ~24px
-@font-size-h4: calc(var(--font-size-base) * 1.25); // ~18px
-@font-size-h5: var(--font-size-base);
-@font-size-h6: calc(var(--font-size-base) * 0.85); // ~12px
+@font-size-h1: var(--font-size-h1); // ~36px
+@font-size-h2: var(--font-size-h2); // ~30px
+@font-size-h3: var(--font-size-h3); // ~24px
+@font-size-h4: var(--font-size-h4); // ~18px
+@font-size-h5: var(--font-size-h5);
+@font-size-h6: var(--font-size-h6); // ~12px
 
 
 // Unitless line height for components like buttons:
 @line-height-base: var(--line-height-base); // 20/14
 // Computed line height (font-size x line-height) for layout use:
-@line-height-computed: calc(var(--font-size-base) * var(--line-height-base)); // ~20px
+@line-height-computed: var(--line-height-computed); // ~20px
 
 // Headings
 @headings-font-family: var(--headings-font-family);
