@@ -1,4 +1,5 @@
 :root {
+	color-scheme: light dark;
 	--toolbar-height: 49px;
 	--mobile-toolbar-height: 57px;
 	--external-header-height: 24px;
@@ -6,19 +7,21 @@
 	--sidebar-width: 192px;
 	--rightbar-width: 192px;
 	--login-background-color: var(--brand-primary-500);
-	--login-inner-background-color: #fff;
-	--gray-base: #000;
-	--gray-darkest: #262626;
-	--gray-darker: #4d4d4d;
-	--gray-dark: #666666;
-	--gray: #777777;
-	--gray-light: #999999;
-	--gray-lighter: #d9d9d9;
-	--gray-lightest: #f2f2f2;
+	--login-inner-background-color: light-dark(#ffffff, #000000);
+	--gray-base: light-dark(#000000, #f2f2f2);
+	--gray-darkest: light-dark(#262626, #d9d9d9);
+	--gray-darker: light-dark(#4d4d4d, #999999);
+	--gray-dark: light-dark(#666666, #777777);
+	--gray: light-dark(#777777, #666666);
+	--gray-light: light-dark(#999999, #4d4d4d);
+	--gray-lighter: light-dark(#d9d9d9, #262626);
+	--gray-lightest: light-dark(#f2f2f2, #191919);
 	--gray-placeholder: var(--gray-dark);
 	--warm-gray: var(--gray-light);
 	--off-white: #fafafa;
-	--translucent-white: rgba(255, 255, 255, 0.7);
+	--translucent-black: rgba(0, 0, 0, 0.6);
+	--translucent-white: rgba(255, 255, 255, 0.6);
+	--overlay-bg: light-dark(var(--translucent-black), var(--translucent-white));
 	--branding-font-family: "Roboto", Helvetica, Arial, sans-serif;
 	--branding-font-family-regular: "Roboto", Helvetica, Arial, sans-serif;
 	--branding-font-family-medium: "Roboto", Helvetica, Arial, sans-serif;
@@ -26,22 +29,23 @@
 	--branding-font-family-medium-italic: "Roboto", Helvetica, Arial, sans-serif;
 	--color-light-positive: #00bd02;
 	--color-light-negative: #ff1f1f;
-	--body-bg: #ffffff;
-	--text-color: var(--gray-darker);
-	--text-color-light: #ffffff;
-	--dialog-title-fg: #000000;
+	--body-bg: light-dark(#ffffff, #000000);
+	--text-color: light-dark(var(--gray-darker), var(--gray-darkest));
+	--text-color-white: #ffffff;
+	--text-color-black: #000000;
+	--dialog-title-fg: var(--gray-base);
 	--background-gray: var(--gray-lightest);
-	--link-color: var(--brand-primary-600);
-	--link-hover-color: var(--brand-primary-800);
+	--link-color: light-dark(var(--brand-primary-600), var(--brand-primary-400));
+	--link-hover-color: light-dark(var(--brand-primary-800), var(--brand-primary-200));
 	--link-hover-decoration: underline;
 	--item-hover-bg: #ffffff;
 	--item-selected-bg: var(--brand-primary-100);
-	--border-color: var(--gray-lighter);
-	--hr-border: var(--gray-lighter);
-	--input-border-color: var(--gray);
+	--border-color: light-dark(var(--gray-lighter), var(--gray));
+	--hr-border: light-dark(var(--gray-lighter), var(--gray));
+	--input-border-color: light-dark(var(--gray), var(--gray));
 	--placeholder-color: var(--gray-dark);
 	--app-menu-active-color: var(--gray-lightest);
-	--list-active-bg: var(--brand-primary-50);
+	--list-active-bg: light-dark(var(--brand-primary-50), var(--brand-primary-900));
 	--list-hover-bg: var(--gray-lightest);
 	--folder-item-hover-bg: var(--list-hover-bg);
 	--sidebar-bg-color: var(--gray-lightest);
@@ -113,5 +117,14 @@
 	--row-height-narrow: 72px;
 	--row-height-wide: 27px;
 	--tag-secondary-font-color: #ffffff;
-	--popover-row-border-color: #ccc
+	--popover-row-border-color: var(--border-color)
+}
+
+:root[class*=light] {
+	/* forces light color-scheme */
+	color-scheme: light;
+}
+:root[class*=dark] {
+	/* forces dark color-scheme */
+	color-scheme: dark;
 }
