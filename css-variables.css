@@ -38,7 +38,7 @@
 	--item-selected-bg: var(--brand-primary-100);
 	--border-color: var(--gray-lighter);
 	--hr-border: var(--gray-lighter);
-	--input-border-color: var(--gray);
+	--input-border-color: var(--gray-dark);
 	--placeholder-color: var(--gray-dark);
 	--app-menu-active-color: var(--gray-lightest);
 	--list-active-bg: var(--brand-primary-50);
