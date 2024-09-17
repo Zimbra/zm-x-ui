@@ -44,7 +44,8 @@
 	--hr-border: light-dark(var(--gray-lighter), var(--gray));
 	--input-border-color: light-dark(var(--gray), var(--gray));
 	--placeholder-color: var(--gray-dark);
-	--app-menu-active-color: var(--gray-lightest);
+	--app-menu-active-color: light-dark(var(--text-color-white), var(--brand-primary-500));
+	--app-menu-active-background-color: light-dark(var(--brand-primary-500), var(--text-color-white));
 	--list-active-bg: light-dark(var(--brand-primary-50), var(--brand-primary-900));
 	--list-hover-bg: var(--gray-lightest);
 	--folder-item-hover-bg: var(--list-hover-bg);
