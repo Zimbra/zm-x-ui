@@ -120,12 +120,3 @@
 	--tag-secondary-font-color: #ffffff;
 	--popover-row-border-color: var(--border-color)
 }
-
-:root[class*=light] {
-	/* forces light color-scheme */
-	color-scheme: light;
-}
-:root[class*=dark] {
-	/* forces dark color-scheme */
-	color-scheme: dark;
-}
