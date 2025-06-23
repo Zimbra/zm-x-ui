@@ -16,6 +16,18 @@
 	--gray-light: light-dark(#999999, #4d4d4d);
 	--gray-lighter: light-dark(#d9d9d9, #262626);
 	--gray-lightest: light-dark(#f2f2f2, #191919);
+	/* Stable colors which will not changed in dark mode */
+	--gray-base-stable: #000000;
+	--gray-darkest-stable: #262626;
+	--gray-darker-stable: #4d4d4d;
+	--gray-dark-stable: #666666;
+	--gray-stable: #777777;
+	--gray-light-stable: #999999;
+	--gray-lighter-stable: #d9d9d9;
+	--gray-lightest-stable: #f2f2f2;
+	--black-bg: #000000;
+	--white-bg: #ffffff;
+
 	--gray-placeholder: var(--gray-dark);
 	--warm-gray: var(--gray-light);
 	--off-white: #fafafa;
