@@ -132,4 +132,6 @@
 	--tag-secondary-font-color: #ffffff;
 	--popover-row-border-color: var(--border-color);
 	--warning-banner-bg: light-dark(var(--brand-warning-300), var(--brand-warning-500));
+	--drop-zone-bg: var(--brand-primary-50);
+	--drop-zone-border-color: var(--brand-primary-600);
 }
