@@ -157,4 +157,7 @@
 	--zimbra-icon-day: "\e99a";
 	--zimbra-icon-contrast: "\e99b";
 	--zimbra-icon-cloud-upload: "\e99c";
+	--zimbra-icon-no-cloud-upload: "\e99f";
+	--zimbra-icon-move: "\e99d";
+	--zimbra-icon-no-move: "\e99e";
 }
