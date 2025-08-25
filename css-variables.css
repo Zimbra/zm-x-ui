@@ -136,4 +136,5 @@
 	--drop-zone-bg: light-dark(rgba(215, 243, 255, 0.9), rgba(0, 55, 79, 0.9));
 	--drop-zone-border-color: light-dark(rgba(0, 118, 168, 0.9), rgba(128, 187, 212, 0.9));
 	--drop-zone-text-color: light-dark(#00648f, #80bbd4);
+	--secondary-scrollbar: light-dark(#d1d1d1, #4d4d4d) light-dark(#d1d1d1, #4D4D4D);
 }
