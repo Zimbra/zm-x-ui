@@ -134,4 +134,5 @@
 	--warning-banner-bg: light-dark(var(--brand-warning-300), var(--brand-warning-500));
 	--drop-zone-bg: var(--brand-primary-50);
 	--drop-zone-border-color: var(--brand-primary-600);
+	--secondary-scrollbar: light-dark(#d1d1d1, #4d4d4d) light-dark(#d1d1d1, #4D4D4D);
 }
