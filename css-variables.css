@@ -138,3 +138,12 @@
 	--drop-zone-text-color: light-dark(#00648f, #80bbd4);
 	--secondary-scrollbar: light-dark(#d1d1d1, #4d4d4d) light-dark(#d1d1d1, #4D4D4D);
 }
+
+:root[data-theme=light] {	
+	/* forces light color-scheme */	
+	color-scheme: light;	
+}	
+:root[data-theme=dark] {	
+	/* forces dark color-scheme */	
+	color-scheme: dark;	
+}	
