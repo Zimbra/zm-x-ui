@@ -140,8 +140,7 @@
 
 .listItem() {
 	display: block;
-	height: 32px;
-	padding: 7px 32px;
+	padding: var(--spacing-xs);
 	color: var(--text-color);
 	border: none;
 	text-decoration: none;
@@ -152,22 +151,6 @@
 	&:hover {
 		color: var(--gray-darker);
 		text-decoration: none;
-	}
-
-	&[data-depth="2"] {
-		padding-left: calc(32px * 1.5);
-	}
-	&[data-depth="3"] {
-		padding-left: calc(32px * 2);
-	}
-	&[data-depth="4"] {
-		padding-left: calc(32px * 2.5);
-	}
-	&[data-depth="5"] {
-		padding-left: calc(32px * 3);
-	}
-	&[data-depth="6"] {
-		padding-left: calc(32px * 3.5);
 	}
 }
 
