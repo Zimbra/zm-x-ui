@@ -61,9 +61,9 @@
 	--list-active-bg: light-dark(var(--brand-primary-50), var(--brand-primary-900));
 	--list-hover-bg: var(--gray-lightest);
 	--folder-item-hover-bg: var(--list-hover-bg);
-	--sidebar-bg-color: var(--gray-lightest);
-	--sidebar-header-bg-color: var(--gray-lightest);
-	--sidebar-shaded-color: var(--gray-lighter);
+	--sidebar-bg-color: var(--body-bg);
+	--sidebar-header-bg-color: var(--body-bg);
+	--sidebar-shaded-color: var(--border-color);
 	--rightbar-bg-color: var(--gray-lightest);
 	--read-pane-toolbar-color: var(--gray-lightest);
 	--read-pane-bg-color: var(--gray-lightest);
