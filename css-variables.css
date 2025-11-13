@@ -54,7 +54,7 @@
 	--item-selected-bg: var(--brand-primary-100);
 	--border-color: light-dark(var(--gray-lighter), var(--gray));
 	--hr-border: light-dark(var(--gray-lighter), var(--gray));
-	--input-border-color: light-dark(var(--gray), var(--gray));
+	--input-border-color: var(--gray-light);
 	--placeholder-color: var(--gray-dark);
 	--app-menu-active-color: light-dark(var(--text-color-white), var(--brand-primary-500));
 	--app-menu-active-background-color: light-dark(var(--brand-primary-500), var(--text-color-white));
