@@ -138,4 +138,22 @@
 	--drop-zone-border-color: light-dark(rgba(0, 118, 168, 0.9), rgba(128, 187, 212, 0.9));
 	--drop-zone-text-color: light-dark(#00648f, #80bbd4);
 	--secondary-scrollbar: light-dark(#d1d1d1, #4d4d4d) light-dark(#d1d1d1, #4D4D4D);
+	--tag-color-blue: #3C82F6;
+	--tag-color-cyan: #008080;
+	--tag-color-green: #248723;
+	--tag-color-purple: #6F3C96;
+	--tag-color-red: #DC2625;
+	--tag-color-yellow: #FBAF19;
+	--tag-color-pink: #DD0B73;
+	--tag-color-gray: #758083;
+	--tag-color-orange: #FF7015;
+	--calendar-color-blue: #d2def8;
+	--calendar-color-cyan: #d2eff3;
+	--calendar-color-green: #d6f0cf;
+	--calendar-color-purple: #e4d8ee;
+	--calendar-color-red: #fcc3be;
+	--calendar-color-yellow: #fdf8b1;
+	--calendar-color-pink: #ffd7df;
+	--calendar-color-gray: #e5e5e5;
+	--calendar-color-orange: #fcdbb3;
 }
