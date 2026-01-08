@@ -46,6 +46,7 @@
 	--text-color-white: #ffffff;
 	--text-color-black: #000000;
 	--dialog-title-fg: var(--gray-base);
+	--dialog-bg: light-dark(#ffffff, #1A1A1A);
 	--background-gray: var(--gray-lightest);
 	--link-color: light-dark(var(--brand-primary-600), var(--brand-primary-400));
 	--link-hover-color: light-dark(var(--brand-primary-800), var(--brand-primary-200));
@@ -116,6 +117,12 @@
 	--spacing-md: calc(var(--spacing-base) * 2);
 	--spacing-lg: calc(var(--spacing-base) * 3);
 	--spacing-xl: calc(var(--spacing-base) * 4);
+	--radius-base: 4px;
+	--radius-xs: var(--radius-base);
+	--radius-sm: calc(var(--radius-base) * 2);
+	--radius-md: calc(var(--radius-base) * 3);
+	--radius-lg: calc(var(--radius-base) * 4);
+	--radius-xl: calc(var(--radius-base) * 5);
 	--icon-size-xs: 12px;
 	--icon-size-sm: 16px;
 	--icon-size-md: 24px;
