@@ -28,6 +28,8 @@
 	--black-bg: #000000;
 	--white-bg: #ffffff;
 
+	--surface-color: #f5f8fc;
+	--surface-bg: light-dark(var(--surface-color), var(--gray-lighter));
 	--gray-placeholder: var(--gray-dark);
 	--warm-gray: var(--gray-light);
 	--off-white: #fafafa;
