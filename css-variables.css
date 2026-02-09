@@ -140,7 +140,7 @@
 	--row-height-wide: 27px;
 	--tag-secondary-font-color: #ffffff;
 	--popover-row-border-color: var(--border-color);
-	--warning-banner-bg: light-dark(var(--brand-warning-300), var(--brand-warning-500));
+	--warning-banner-bg: light-dark(var(--brand-warning-50), var(--brand-warning-200));
 	--drop-zone-bg: light-dark(rgba(215, 243, 255, 0.9), rgba(0, 55, 79, 0.9));
 	--drop-zone-border-color: light-dark(rgba(0, 118, 168, 0.9), rgba(128, 187, 212, 0.9));
 	--drop-zone-text-color: light-dark(#00648f, #80bbd4);
@@ -163,4 +163,13 @@
 	--calendar-color-pink: #ffd7df;
 	--calendar-color-gray: #e5e5e5;
 	--calendar-color-orange: #fcdbb3;
+	--avatar-color-blue: var(--tag-color-blue);
+	--avatar-color-cyan: var(--tag-color-blue);
+	--avatar-color-green: var(--tag-color-green);
+	--avatar-color-purple: var(--tag-color-purple);
+	--avatar-color-red: var(--tag-color-red);
+	--avatar-color-yellow: var(--tag-color-yellow);
+	--avatar-color-pink: var(--tag-color-pink);
+	--avatar-color-orange: var(--tag-color-orange);
+	--avatar-color-sky-blue: #169fd9;
 }
