@@ -163,13 +163,16 @@
 	--calendar-color-pink: #ffd7df;
 	--calendar-color-gray: #e5e5e5;
 	--calendar-color-orange: #fcdbb3;
-	--avatar-color-blue: var(--tag-color-blue);
-	--avatar-color-cyan: var(--tag-color-blue);
-	--avatar-color-green: var(--tag-color-green);
-	--avatar-color-purple: var(--tag-color-purple);
-	--avatar-color-red: var(--tag-color-red);
-	--avatar-color-yellow: var(--tag-color-yellow);
-	--avatar-color-pink: var(--tag-color-pink);
-	--avatar-color-orange: var(--tag-color-orange);
-	--avatar-color-sky-blue: #169fd9;
+	--avatar-color-navy: #1E3A8A;
+	--avatar-color-violet: #5B21B6;
+	--avatar-color-teal: #0F766E;
+	--avatar-color-forest: #166534;
+	--avatar-color-emerald: #065F46;
+	--avatar-color-rust: #C2410C;
+	--avatar-color-amber: #B45309;
+	--avatar-color-crimson: #991B1B;
+	--avatar-color-rose: #9F1239;
+	--avatar-color-indigo: #3730A3;
+	--avatar-color-coffee: #4E342E;
+	--avatar-color-slate: #334155;
 }
