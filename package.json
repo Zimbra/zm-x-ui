@@ -10,7 +10,7 @@
 	"scripts": {
 		"generateIconVariablesFile": "node generate-icon-variables.js",
 		"build": "npm run generateIconVariablesFile",
-		"prepublishOnly": "npm run build && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags"
+		"prepublishOnly": "if [ \"$CI\" != \"true\" ]; then npm run build && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags; fi"
 	},
 	"engines": {
 		"node": ">=18"
