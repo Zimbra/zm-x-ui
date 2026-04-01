@@ -1,9 +1,10 @@
 :root {
 	color-scheme: light dark;
-	--toolbar-height: 49px;
+	--navbar-height: 32px;
+	--toolbar-height: 48px;
 	--mobile-toolbar-height: 57px;
 	--external-header-height: 24px;
-	--search-header-height: 72px;
+	--search-header-height: 56px;
 	--sidebar-width: 192px;
 	--rightbar-width: 192px;
 	--login-background-color: var(--brand-primary-500);
@@ -59,8 +60,8 @@
 	--hr-border: light-dark(var(--gray-lighter), var(--gray));
 	--input-border-color: var(--gray-light);
 	--placeholder-color: var(--gray-dark);
-	--app-menu-active-color: light-dark(var(--text-color-white), var(--brand-primary-500));
-	--app-menu-active-background-color: light-dark(var(--brand-primary-500), var(--text-color-white));
+	--app-menu-active-color: var(--text-color-white);
+	--app-menu-active-background-color: var(--brand-primary-500);
 	--list-active-bg: light-dark(var(--brand-primary-50), var(--brand-primary-900));
 	--list-hover-bg: var(--gray-lightest);
 	--folder-item-hover-bg: var(--list-hover-bg);
@@ -132,9 +133,9 @@
 	--icon-size-xl: 40px;
 	--logo-height: 32px;
 	--logo-max-width: 200px;
-	--header-bg: var(--gray-lightest);
-	--header-fg: var(--gray-darker);
-	--header-actions-fg: var(--gray-darker);
+	--header-bg: light-dark(var(--white-bg), #1A1A1A);
+	--header-fg: light-dark(var(--gray-darker), var(--gray-darkest));
+	--header-actions-fg: light-dark(var(--gray-darker), var(--gray-darkest));
 	--external-header-bg: var(--brand-primary-700);
 	--external-header-fg: #ffffff;
 	--search-highlighter: #fff100;
