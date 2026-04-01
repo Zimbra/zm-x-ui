@@ -1,0 +1,104 @@
+version: 2.1
+
+############################################################################
+
+executors:
+  node-executor:
+    working_directory: ~/zm-x-ui
+    docker:
+      - image: cimg/node:18.20
+    resource_class: small
+
+env-context: &env-context
+  context:
+    - npm-js
+
+
+############################################################################
+persist-workspace: &persist-workspace
+  persist_to_workspace:
+    root: ~/
+    paths:
+      - zm-x-ui
+
+attach-workspace: &attach-workspace
+  attach_workspace:
+    at: ~/
+
+feature-branch: &feature-branch
+  filters:
+    branches:
+      ignore:
+        - /(custom_)?release\/.*/
+
+############################################################################
+# JOBS
+############################################################################
+
+jobs:
+
+  build:
+    executor: node-executor
+    steps:
+      - checkout
+
+      - run:
+          name: Build project
+          command: npm run build
+
+      - *persist-workspace
+
+
+  publish:
+    executor: node-executor
+    steps:
+      - *attach-workspace
+
+      - run:
+          name: Setup npm authentication
+          command: |
+            echo "//registry.npmjs.org/:_authToken=${NPM_PUBLISH_TOKEN}" > ~/.npmrc
+
+      - run:
+          name: Set dynamic prerelease version (no git tag)
+          command: |
+            SAFE_BRANCH=$(echo "$CIRCLE_BRANCH" | sed 's/\//-/g')
+            SHORT_SHA=$(echo "$CIRCLE_SHA1" | cut -c1-7)
+
+            npm version prerelease \
+              --preid="${SAFE_BRANCH}.${SHORT_SHA}" \
+              --no-git-tag-version
+
+      - run:
+          name: Publish to npm
+          command: |
+            SAFE_BRANCH=$(echo "$CIRCLE_BRANCH" | sed 's/\//-/g')
+            if [ "$SAFE_BRANCH" = "master" ]; then
+              npm publish --access public --tag beta
+            else
+              npm publish --access public --tag next
+            fi
+
+############################################################################
+# WORKFLOWS
+############################################################################
+
+workflows:
+  version: 2
+
+  build-and-publish:
+    jobs:
+      - build:
+          <<: *feature-branch
+
+      - publish-approval:
+          <<: *feature-branch
+          type: approval
+          requires:
+            - build
+
+      - publish:
+          <<: *feature-branch
+          <<: *env-context
+          requires:
+            - publish-approval
