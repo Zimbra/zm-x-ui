@@ -6,7 +6,7 @@ executors:
   node-executor:
     working_directory: ~/zm-x-ui
     docker:
-      - image: cimg/node:18.20
+      - image: cimg/node:25.9.0
     resource_class: small
 
 env-context: &env-context

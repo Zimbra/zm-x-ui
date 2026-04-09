@@ -13,7 +13,7 @@
 		"prepublishOnly": "if [ \"$CI\" != \"true\" ]; then npm run build && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags; fi"
 	},
 	"engines": {
-		"node": ">=18"
+		"node": "^25.9.0"
 	},
 	"repository": "Zimbra/zm-x-ui",
 	"license": "BSD-3-Clause"
