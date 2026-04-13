@@ -98,9 +98,9 @@
 	--font-family-plainText: monospace;
 	--font-size-folder-list: 13px;
 	--font-size-base: 14px;
-	--font-size-med: calc(var(--font-size-base) * 1.15); /*~16px*/
-	--font-size-large: calc(var(--font-size-base) * 1.25); /*~18px*/
-	--font-size-small: calc(var(--font-size-base) * 0.85); /*~12px*/
+	--font-size-med: calc(var(--font-size-base) * 1.15); /* ~16px */
+	--font-size-large: calc(var(--font-size-base) * 1.25); /* ~18px */
+	--font-size-small: calc(var(--font-size-base) * 0.85); /* ~12px */
 	--font-size-h1: calc(var(--font-size-base) * 2.6); /* ~36px */
 	--font-size-h2: calc(var(--font-size-base) * 2.15); /* ~30px */
 	--font-size-h3: calc(var(--font-size-base) * 1.7); /* ~24px */
