@@ -178,4 +178,5 @@
 	--avatar-color-indigo: #3730A3;
 	--avatar-color-coffee: #4E342E;
 	--avatar-color-slate: #334155;
+	--primary-light-border: light-dark(var(--brand-primary-100), var(--input-border-color));
 }
