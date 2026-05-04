@@ -96,7 +96,8 @@
 	--font-family-primary: inherit;
 	--font-family-secondary: inherit;
 	--font-family-plainText: monospace;
-	--font-size-folder-list: 13px;
+	--font-size-secondary: 13px;
+	--font-size-caption: 11px;
 	--font-size-base: 14px;
 	--font-size-med: calc(var(--font-size-base) * 1.15); /*~16px*/
 	--font-size-large: calc(var(--font-size-base) * 1.25); /*~18px*/
@@ -139,8 +140,12 @@
 	--external-header-bg: var(--brand-primary-700);
 	--external-header-fg: #ffffff;
 	--search-highlighter: #fff100;
-	--row-height-narrow: 72px;
-	--row-height-wide: 27px;
+	--row-height-narrow-relaxed: 80px;
+	--row-height-narrow-regular: 72px;
+	--row-height-narrow-slim: 56px;
+	--row-height-wide-relaxed: 44px;
+	--row-height-wide-regular: 32px;
+	--row-height-wide-slim: 24px;
 	--tag-secondary-font-color: #ffffff;
 	--popover-row-border-color: var(--border-color);
 	--warning-banner-bg: light-dark(var(--brand-warning-50), var(--brand-warning-200));
