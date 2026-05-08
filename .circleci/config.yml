@@ -29,7 +29,14 @@ feature-branch: &feature-branch
   filters:
     branches:
       ignore:
+        - master
         - /(custom_)?release\/.*/
+
+master-branch: &master-branch
+  filters:
+    branches:
+      only:
+        - master
 
 ############################################################################
 # JOBS
@@ -86,7 +93,7 @@ jobs:
 workflows:
   version: 2
 
-  build-and-publish:
+  commit-workflow:
     jobs:
       - build:
           <<: *feature-branch
@@ -102,3 +109,14 @@ workflows:
           <<: *env-context
           requires:
             - publish-approval
+
+  master-branch-workflow:
+    jobs:
+      - build:
+          <<: *master-branch
+
+      - publish:
+          <<: *master-branch
+          <<: *env-context
+          requires:
+            - build
