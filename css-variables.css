@@ -1,6 +1,6 @@
 :root {
 	color-scheme: light dark;
-	--navbar-height: 32px;
+	--navbar-height: 36px;
 	--toolbar-height: 48px;
 	--mobile-toolbar-height: 57px;
 	--external-header-height: 24px;
@@ -98,6 +98,7 @@
 	--font-family-plainText: monospace;
 	--font-size-folder-list: 13px;
 	--font-size-dialog-title: 20px;
+	--font-size-secondary: 13px;
 	--font-size-base: 14px;
 	--font-size-med: calc(var(--font-size-base) * 1.15); /*~16px*/
 	--font-size-large: calc(var(--font-size-base) * 1.25); /*~18px*/
