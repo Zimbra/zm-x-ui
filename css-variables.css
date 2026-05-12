@@ -140,8 +140,9 @@
 	--external-header-bg: var(--brand-primary-700);
 	--external-header-fg: #ffffff;
 	--search-highlighter: #fff100;
+	--row-height-narrow: 72px;
 	--row-height-narrow-relaxed: 80px;
-	--row-height-narrow-regular: 72px;
+	--row-height-narrow-regular: var(--row-height-narrow);
 	--row-height-narrow-slim: 56px;
 	--row-height-wide-relaxed: 44px;
 	--row-height-wide-regular: 32px;
@@ -184,4 +185,5 @@
 	--avatar-color-coffee: #4E342E;
 	--avatar-color-slate: #334155;
 	--primary-light-border: light-dark(var(--brand-primary-100), var(--input-border-color));
+	--flag-color: #CD1D1D
 }
