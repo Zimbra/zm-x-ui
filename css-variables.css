@@ -124,6 +124,7 @@
 	--radius-xl: calc(var(--radius-base) * 5);
 	--icon-size-xs: 12px;
 	--icon-size-sm: 16px;
+	--icon-size-smd: 20px;
 	--icon-size-md: 24px;
 	--icon-size-lg: 32px;
 	--icon-size-xl: 40px;
