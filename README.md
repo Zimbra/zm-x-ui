@@ -2,7 +2,7 @@
 [![NPM Version](https://img.shields.io/npm/v/@zimbra/x-ui.svg?style=flat)](https://www.npmjs.com/package/@zimbra/x-ui)
 
 ## @zimbra/x-ui
-This repository contains the LESS variables and mixins used by [`zm-x-web`](https://github.com/Zimbra/zm-x-web) and Zimbra X Zimlets.
+This repository contains the CSS variables, icons, fonts, and legacy LESS helpers used by [`zm-x-web`](https://github.com/Zimbra/zm-x-web) and Zimbra X Zimlets.
 
 ### Install
 
@@ -12,25 +12,30 @@ npm install @zimbra/x-ui
 
 ### Usage
 
-Requiring LESS variables (see [variables.less](https://github.com/Zimbra/zm-x-ui/blob/master/variables.less)):
+Requiring the global icon and font styles:
 
 ```css
-// Gives access to @brand-primary, @icon-size-md, etc.
+@import '@zimbra/x-ui/index.css';
+```
+
+Requiring CSS variables (recommended for Zimlets, see [css-variables.css](https://github.com/Zimbra/zm-x-ui/blob/master/css-variables.css)):
+
+```css
+@import '@zimbra/x-ui/css-variables.css';
+```
+
+Requiring legacy LESS breakpoint variables (see [variables.less](https://github.com/Zimbra/zm-x-ui/blob/master/variables.less)):
+
+```css
+// Gives access to breakpoints used by the legacy helpers.
 @import '~@zimbra/x-ui/refs.less';
 ```
 
-Requiring Mixins (see [helpers.less](https://github.com/Zimbra/zm-x-ui/blob/master/helpers.less)):
+Requiring legacy LESS mixins (see [helpers.less](https://github.com/Zimbra/zm-x-ui/blob/master/helpers.less)):
 
 ```css
 // Gives access to `fit`, `fill`, etc.
 @import '~@zimbra/x-ui/helpers.less';
-```
-
-Requiring CSS Variables (recommended for Zimlets, see [css-variables.less](https://github.com/Zimbra/zm-x-ui/blob/master/css-variables.less)):
-
-```css
-// Gives access to `--brand-primary`, `--brand-secondary`, etc.
-@import '~@zimbra/x-ui/css-variables.less';
 ```
 
 
@@ -62,7 +67,7 @@ Review the resulting glyphs and metadata.
 
 7. When you're happy with what you see, click the **Download** action that's now on the **Font** tab, to download `zimbra-icons.zip`.
 
-Update the repo with the contents of the zip file by running [import-icomoon.sh](https://gist.github.com/pl12133/aadc10ad45be4952336b62b39c9e8c3a). 
+Update the repo with the contents of the zip file by running [import-icomoon.sh](https://gist.github.com/pl12133/aadc10ad45be4952336b62b39c9e8c3a).
 
 1. Set environment variable `ZM_X_UI_DIR` to point to your `zm-x-ui` directory; the default is `$HOME/github/Zimbra/zm-x-ui`
 
@@ -71,7 +76,7 @@ Update the repo with the contents of the zip file by running [import-icomoon.sh]
    ```
 
 2. Run script with path to `zimbra-icon.zip` file as argument:
- 
+
    ```sh
    $: ./import-icomoon.sh ./path/to/zimbra-icon.zip
    ```

@@ -1,8 +1,9 @@
 {
 	"name": "@zimbra/x-ui",
 	"version": "13.0.0",
-	"description": "LESS mixins, CSS variables, and icons used by the Zimbra X client and Zimbra X compatible zimlets",
-	"main": "index.less",
+	"description": "CSS variables, icons, fonts, and legacy LESS helpers used by the Zimbra X client and compatible Zimlets",
+	"main": "index.css",
+	"style": "index.css",
 	"keywords": [
 		"zimbra",
 		"zm-x-web"
