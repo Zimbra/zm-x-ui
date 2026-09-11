@@ -8,8 +8,7 @@
 	font-display: auto;
 }
 
-:global {
-	.zimbra-icon {
+.zimbra-icon {
 		/* use !important to prevent issues with browser extensions that change fonts */
 		font-family: "zimbra-icons" !important;
 		speak: none;
@@ -22,11 +21,13 @@
 		/* Better Font Rendering =========== */
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
-		&:before {
-			// Un-implemented icons are replaced with unicode REPLACEMENT characters
-			content: "      �";
-		}
-	}
+}
+
+.zimbra-icon:before {
+	/* Unimplemented icons are replaced with unicode REPLACEMENT characters. */
+	content: "      �";
+}
+
 	.zimbra-icon-account-external:before {
 		content: var(--zimbra-icon-account-external);
 	}
@@ -71,10 +72,10 @@
     	content: var(--zimbra-icon-global-address-list);
 	}
 	.zimbra-icon-folder-shared:before {
-		content: var(--zimbra-icon-folder-shared); 
+		content: var(--zimbra-icon-folder-shared);
 	}
 	.zimbra-icon-folder-search:before {
-		content: var(--zimbra-icon-folder-search); 
+		content: var(--zimbra-icon-folder-search);
 	}
 	.zimbra-icon-folder-trash:before {
 		content: var(--zimbra-icon-folder-trash);
@@ -585,13 +586,13 @@
 		content: var(--zimbra-icon-briefcase);
 	}
 	.zimbra-icon-folder:before {
-		content: var(--zimbra-icon-folder) 
+		content: var(--zimbra-icon-folder);
 	}
 	.zimbra-icon-integration:before {
-		content: var(--zimbra-icon-integration) 
+		content: var(--zimbra-icon-integration);
 	}
 	.zimbra-icon-up-to-parent:before {
-		content: var(--zimbra-icon-up-to-parent) 
+		content: var(--zimbra-icon-up-to-parent);
 	}
 	.zimbra-icon-notes:before {
 		content: var(--zimbra-icon-notes);
@@ -632,4 +633,3 @@
 	.zimbra-icon-save:before {
 		content: var(--zimbra-icon-save);
 	}
-}
