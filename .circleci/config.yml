@@ -49,10 +49,6 @@ jobs:
     steps:
       - checkout
 
-      - run:
-          name: Build project
-          command: npm run build
-
       - *persist-workspace
 
 
